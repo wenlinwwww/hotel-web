@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Resort</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Girassol&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet">
+    <!-- font reference: https://fonts.google.com/specimen/Pacifico -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header id="main">
+        <h1>The seafloor of Mariana Trench Explorers Paradise</h1>
+
+        <button class="login" onclick="jump()" >Login</button>
+    </header>
+
+    <nav>
+        <ul>
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+            <li>
+                <a href="resort.html">Resort</a>
+            </li>
+            <li>
+                <a href="Hotel.html">Hotel</a>
+            </li>
+            <li>
+                <a href="ticket.html">Ticket</a>
+            </li>
+            <li>
+                <a href="contact.html">Contact</a>
+            </li>
+            <li>
+                <a href="reference.html">Reference</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="activities_container">
+
+        <div class="slide fade">
+            <div class="number">1 / 3</div>
+            <a href="firecamp.html"><img src="images/underwater campfire.JPG" alt="Campfire"></a>
+            <div class="text">Campfire</div>
+        </div>
+
+        <div class="slide fade">
+            <div class="number">2 / 3</div>
+            <a href="plant.html"><img src="images/planting.jpg" alt="Underwater Planting"> </a>
+            <div class="text">Underwater Planting</div>
+        </div>
+         
+        <div class="slide fade">
+            <div class="number">3 / 3</div>
+            <a href="tunnel.html"><img src="images/tunnel.jpeg" alt="Sightseeing tunnel"></a>
+            <div class="text">Sightseeing tunnel</div>
+        </div>
+
+        <a class="prev" onclick="nextPicture(-1)">❮</a>
+        <a class="next" onclick="nextPicture(1)">❯</a>
+
+    </div>
+
+    <br>
+ 
+    <div class="change">
+    <span class="c" onclick="currentOne(1)"></span> 
+    <span class="c" onclick="currentOne(2)"></span> 
+    <span class="c" onclick="currentOne(3)"></span> 
+    </div>
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,590 @@
+* {
+	margin: 0;
+	padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+	font-family: 'Roboto Condensed', Helvetica, Arial, sans-serif;
+	font-size: 1.5vw;
+	line-height: 1.5em;
+	background-color: rgb(236, 239, 245);
+	color: black;
+}
+
+/*title*/
+#main h1 {
+    font-family:'Girassol', cursive;;
+    background: rgb(236, 239, 245);
+    padding: 2% 3%;
+    float: left;
+}
+
+#main .login {
+
+    background-color: #008CBA;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 2vw;
+    font-family: 'Roboto Condensed', Helvetica, Arial, sans-serif;
+    border: 2px solid #008CBA;
+    position: relative;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-left: 20%;
+    padding: 0.5% 0.5% 0.5% 0.5%;
+    cursor: pointer;
+}
+
+#main .login:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+/*login page*/
+.login_container {
+    font-size: 4vw;
+    padding-left: 50%;
+    padding-top: 60%;
+}
+
+/*menu-navigation bar*/
+nav {
+    clear: both;
+    background-color: rgb(48, 47, 47);
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    text-align: center;
+}
+
+nav li {
+    display: inline;
+}
+
+nav a:link, a:visited {
+	color: white;
+    text-decoration: none;
+    padding: 1% 2%;
+    text-transform: uppercase;
+    border-radius: 1%;
+    text-shadow: rgba(0,0,0,0.5) 0 1px 0;
+}
+
+nav a:hover, a:active {
+    background: gray;
+}
+
+/*search bar*/
+.search {
+    background-image: url("images/background.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 50vh;
+    padding-bottom: 36%;
+}
+
+.search h3 {
+    text-align: center;
+	font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 3vw;
+    color: white;
+    padding-top: 4%;
+    padding-bottom: 6%;
+}
+
+.search h2 {
+    text-align: center;
+	font-weight: bold;
+    font-family: 'Pacifico', cursive;
+    font-size: 8vw;
+    color: white;
+    padding-top: 2%;
+    padding-bottom: 8%;
+}
+
+.search button {
+    position: relative;
+    align-items: center;
+    top: 20%;
+    left: 45%;
+    width: 20%;
+    height: 80px;
+    font-size: 2vw;
+    color: white;
+    background: rgb(92, 194, 253);
+    border: 0;
+    border-radius: 10px;
+    text-shadow: 1px 1px 1px rgba(255,255,255, 0.15); 
+    cursor: pointer; 
+}
+
+/*Activities*/
+#activity h2 {
+    text-align: center;
+    font-family: 'Pangolin', cursive;
+    font-size: 4vw;
+    padding-top: 3%;
+    padding-bottom: 2%;
+    padding-left: 2%;
+}
+
+#activity .image1 {
+    margin-top: 1%;
+    margin-bottom: 1%;
+    margin-left: 6%;
+    position: relative;
+    width: 30%;
+    height: 30%;
+    float:left; 
+    display:inline;
+}
+
+.image1 img {
+    width: 70%;
+    height: 70%;
+}
+
+.mask1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 70%;
+    height: 97%;
+    background: rgba(101, 101, 101, 0.6);
+    color: #ffffff;
+    opacity: 0;
+}
+
+.mask1 h4 {
+    text-align: center;
+    padding-top: 45%;
+}
+
+.image1 a:hover .mask1 {
+    opacity: 1;
+}
+
+#activity .image2 {
+    margin-top: 1%;
+    margin-bottom: 1%;
+    margin-left: 2%;
+    position: relative;
+    width: 30%;
+    height: 30%;
+    float:left; 
+    display:inline;
+}
+
+.image2 img {
+    width:70%;
+    height: 70%;
+}
+
+.mask2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 70%;
+    height: 97%;
+    background: rgba(101, 101, 101, 0.6);
+    color: #ffffff;
+    opacity: 0;
+}
+
+.mask2 h4 {
+    text-align: center;
+    padding-top: 45%;
+}
+
+.image2 a:hover .mask2 {
+    opacity: 1;
+}
+
+#activity .image3 {
+    margin-top: 1%;
+    margin-bottom: 1%;
+    margin-left: 2%;
+    position: relative;
+    width: 30%;
+    height: 30%;
+    float:left; 
+    display:inline;
+}
+
+.image3 img {
+    width: 70%;
+    height: 70%;
+}
+
+.mask3 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 70%;
+    height: 97%;
+    background: rgba(101, 101, 101, 0.6);
+    color: #ffffff;
+    opacity: 0;
+}
+
+.mask3 h4 {
+    text-align: center;
+    padding-top: 45%;
+}
+
+.image3 a:hover .mask3 {
+    opacity: 1;
+}
+
+hr {
+    width: 100%;
+}
+
+/*footer*/
+#main_footer {
+    margin-top: 2%;
+    margin-left: 2%;
+}
+
+#main_footer article {
+    padding-left: 1%;
+    padding-bottom: 1%;
+    text-align: left;
+}
+
+/*resort*/
+.slide {display:none}
+
+.activities_container {
+    position: relative;
+    max-width: 100%;
+}
+
+.activities_container img {
+    width: 100%;
+}
+
+.prev, .next {
+    position: absolute;
+    cursor: pointer;
+    top: 50%;
+    margin-top: -5%;
+    padding: 3%;
+    color: white;
+    font-weight: bold;
+    font-size: 1.5vw;
+    transition: 0.5s ease;
+    border-radius: 0 3px 3px 0;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.5);
+}
+
+.text {
+    position: absolute;
+    color: white;
+    font-size: 2vw;
+    padding: 1% 1.5%;
+    bottom: 1%;
+    width: 100%;
+    text-align: center;
+}
+
+.number {
+    position: absolute;
+    top: 0;
+    color: #cac5c5;
+    font-size: 1.2vw;
+    padding: 1% 1.5%;
+}
+
+.change {
+    text-align: center;
+}
+
+.c {
+    cursor:pointer;
+    height: 2%;
+    width: 2%;
+    margin: 0 1%;
+    background-color: rgb(206, 204, 204);
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.5s ease;
+}
+   
+.active, .c:hover {
+    background-color: #5f5e5e;
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+   
+@-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+   
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+/*resort - underwater planting*/
+.up_content img{
+    width: 30%;
+    height: 30%;
+    margin: 2% 20% 5% 15%;
+    float: left;
+}
+
+.up_content textarea {
+    text-align: justify;
+    margin: 2% 3% 5% 5%;
+}
+
+/*resort - campfire*/
+.cf_content img{
+    width: 30%;
+    height: 30%;
+    margin: 2% 10% 5% 15%;
+    float: left;
+}
+
+.cf_content textarea {
+    text-align: justify;
+    margin: 3% 3% 5% 5%;
+}
+
+/*resort - tunnel*/
+.last_content img{
+    width: 30%;
+    height: 30%;
+    margin: 2% 10% 5% 15%;
+    float: left;
+}
+
+.last_content textarea {
+    text-align: justify;
+    margin: 3% 3% 5% 5%;
+}
+
+/*hotel*/
+.different_room {
+    width: 100%;
+}
+
+.different_room h2 {
+    text-align: center;
+    font-size: 4vw;
+    padding-top: 5%;
+}
+
+.different_room img {
+    width: 32%;
+    height: 25%;
+    margin-top: 5%;
+    padding-left: 3%;
+    padding-right: 3%;
+    float: left;
+    cursor: pointer;
+    
+}
+
+.different_room img:hover {
+    box-shadow: 6px 6px 6px rgba(0,0,0,0.3);  
+}
+
+/*single room*/
+.single_container {
+    top: 35%;
+    left: 20%;
+    width: 60%;
+    height: 60%;
+    border: solid black 1px;
+    position: absolute;
+}
+
+.intro {
+    text-align: center;
+    float: left;
+    width: 50%;
+    height: 50%;
+    word-wrap: break-word;
+    border-right: 1px solid black;
+    background-color: white;
+}
+
+.intro h2 {
+    padding-top: 12%;
+}
+
+.imageShow {
+    float: right;
+    position: relative;
+    width: 50%;
+    height: 50%;
+    background: url(images/single-room.jpg) no-repeat;
+    background-size: 100% 100%;
+}
+
+.imageShow2 {
+    float: right;
+    position: relative;
+    width: 50%;
+    height: 50%;
+    background: url(images/double-room.jpg) no-repeat;
+    background-size: 100% 100%;
+}
+
+.imageShow3 {
+    float: right;
+    position: relative;
+    width: 50%;
+    height: 50%;
+    background: url(images/Multiple\ Bed\ Room.jpg) no-repeat;
+    background-size: 100% 100%;
+}
+
+
+.detail {
+    float: right;
+    position: relative;
+    width: 100%;
+    height: 50%;
+    border-top: 1px solid black;
+    padding-top: 5%;
+    padding-left: 2%;
+    background-color: white;
+}
+
+.detail button {
+    position: relative;
+    align-items: center;
+    top: 5%;
+    left: 70%;
+    width: 20%;
+    height: 30%;
+    font-size: 2vw;
+    color: white;
+    background: rgb(92, 194, 253);
+    border: 0;
+    border-radius: 10px;
+    text-shadow: 1px 1px 1px rgba(255,255,255, 0.15); 
+    cursor: pointer; 
+}
+
+/*ticket*/
+.ticket_container {
+    position: absolute;
+    height: 100%;
+    width: 60%;
+    border: 1px solid black;
+    margin-left: 20%;
+}
+
+.ticket_container .ticket1 {
+    height: 30%;
+    width: 100%;
+    background: url(images/ticket.jpg) no-repeat;
+    background-size: 100% 100%;
+}
+
+.ticket_container .ticket2 {
+    padding-top: 2%;
+}
+
+.ticket_container .ticket2 p {
+    padding-bottom: 2%;
+}
+
+.ticket_container .ticket2 button {
+    position: relative;
+    align-items: center;
+    top: 5%;
+    left: 70%;
+    width: 20%;
+    height: 30%;
+    font-size: 2vw;
+    color: white;
+    background: rgb(92, 194, 253);
+    border: 0;
+    border-radius: 10px;
+    text-shadow: 1px 1px 1px rgba(255,255,255, 0.15); 
+    cursor: pointer; 
+}
+
+/*contact*/
+.contact_container {
+    position: absolute;
+    padding-top: 5%;
+    left: 10%;
+    right: 10%;
+    width: 60%;
+    height: 60%;
+}
+
+.contact_container h3 {
+    font-size: 3vw;
+    padding-bottom: 3%;
+}
+
+.contact_container p {
+    font-size: 2vw;
+    padding-bottom: 3%;
+    padding-top: 2%;
+}
+
+.contact_container img {
+    height: 60%;
+    width: 40%;
+    background: no-repeat;
+    border: 1px solid black;
+    border-radius: 2px;
+}
+
+/*reference*/
+.ref_container {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: url(images/ocean-floor.jpg) no-repeat;
+    background-size: 100% 100%;
+}
+
+.ref_container .ref {
+    position: absolute;
+    height: 100%;
+    width: 50%;
+    background-color: rgba(101, 98, 110, 0.7);
+    margin-left: 25%;
+    padding-left: 2%;
+}
+
+.ref_container .ref h2 {
+    padding-top: 2%;
+}
+
+.ref_container .ref p {
+    padding-top: 2%;
+}
+
